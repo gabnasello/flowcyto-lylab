@@ -1,0 +1,12 @@
+services:
+  flowcyto-lylab:
+    image: gnasello/flowcyto-lylab:2025-01-31
+    container_name: flowcyto-lylab
+    ports:
+      - "8542:8787"
+    environment:
+      PASSWORD: yourpassword
+      USERID: 1000 
+      GROUPI: 1000
+      ROOT: true
+
