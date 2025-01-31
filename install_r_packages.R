@@ -81,7 +81,7 @@ required.packages <- c(
   "digest", "dunn.test", "ggplot2", "ggridges", "ggrepel", "ggtext",
   "RColorBrewer", "Rtsne", "uwot", "dplyr", "tidyr", "RcppHNSW",
   "parallel", "data.table", "remotes", "BiocManager", "FastPG",
-  "coda", "emmeans", "EmbedSOM", "ConsensusClusterPlus", "flowCore",
+  "coda", "emmeans", "ConsensusClusterPlus", "flowCore",
   "flowWorkspace", "readxl"
 )
 
@@ -89,7 +89,7 @@ cran.packages <- c(
   "digest", "dunn.test", "ggplot2", "ggridges", "ggrepel", "ggtext",
   "RColorBrewer", "Rtsne", "uwot", "dplyr", "tidyr", "RcppHNSW",
   "parallel", "data.table", "remotes", "BiocManager", "coda", "emmeans",
-  "EmbedSOM", "readxl"
+  "readxl"
 )
 
 bioconductor.packages <- setdiff(required.packages, cran.packages)
@@ -124,3 +124,12 @@ You'll need to get help before proceeding.\n
 stopifnot("Not all packages were installed" = 
             length(setdiff(required.packages, rownames(installed.packages()))) == 0 )
 
+
+# Package ‘EmbedSOM’ was removed from the CRAN repository.
+#Formerly available versions can be obtained from the archive.
+#Archived on 2025-01-10 as issues were not corrected in time.
+
+# Use R Packages Like pak to Avoid GitHub API Rate Limits
+install.packages("pak")
+pak::pak("exaexa/EmbedSOM")
+# Alternative to devtools::install_github('exaexa/EmbedSOM')

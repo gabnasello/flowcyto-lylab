@@ -1,4 +1,11 @@
 -------------------------------
+v. 2025-01-31
+
+Install alla libraries in 
+
+https://github.com/DrCytometer/Simplified-flowcytoscript/blob/main/00_source_files/flowcytoscript_startup.R
+
+-------------------------------
 v. 2025-01-30
 
 Switch to bioconductor base image
